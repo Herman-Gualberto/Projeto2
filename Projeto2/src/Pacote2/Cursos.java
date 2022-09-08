@@ -13,7 +13,7 @@ public class Cursos {
 		/*=======================================================*/
 		/*Exemplo de for*/
 		for (numero=0; numero <=21; numero += 3) {
-			if (numero == 3 || numero == 9) {
+			if (numero == 3 || numero == 9) {   /*operador || é o OR e && é o AND*/
 			   System.out.println(" numero = " + numero);
 			   continue; /*Funciona como loop*/
 			}
