@@ -10,6 +10,7 @@ public class Cursos {
 		System.out.println("Engenharia");
 		System.out.println("Pedagogia");
 		
+		/*=======================================================*/
 		/*Exemplo de for*/
 		for (numero=0; numero <=21; numero += 3) {
 			if (numero == 3 || numero == 9) {
@@ -23,6 +24,8 @@ public class Cursos {
 		System.out.println("valor final do numero = " + numero);
 	    }
 		
+		/*=======================================================*/
+		/*Entrada e tratamento de dados*/
 		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros?");
 		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas?");
 				
@@ -33,6 +36,7 @@ public class Cursos {
 		double resto = carrosnumero % pessoasnumero;
 		JOptionPane.showMessageDialog(null,"Divisão por pessoa deu " + divisao + "carros e sobrou " + resto + "carro");
 		
+		/*=======================================================*/
 		/*Exemplo de Case*/
 		switch (divisao) {
 		case 1: {
@@ -47,6 +51,7 @@ public class Cursos {
 		    break;
 		}
 		
+		/*=======================================================*/
 		/*While Do -> Primeiro verifica e depois executa*/
 		int vez = 0;
 		while (vez <= 10) { 
@@ -54,6 +59,7 @@ public class Cursos {
 			vez += 2;
 		}
 		
+		/*=======================================================*/
 		/*Do While -> Primeiro executa e depois verifica*/
 		do { /*Primeiro executa e depois verifica*/
 			System.out.println("A variável vez está valendo: " + vez);
