@@ -11,7 +11,7 @@ public class Cursos {
 		System.out.println("Pedagogia");
 		
 		/*=======================================================*/
-		/*Exemplo de for*/
+		/* Exemplo de for */
 		for (numero=0; numero <=21; numero += 3) {
 			if (numero == 3 || numero == 9) {   /*operador || é o OR e && é o AND*/
 			   System.out.println(" numero = " + numero);
@@ -25,7 +25,7 @@ public class Cursos {
 	    }
 		
 		/*=======================================================*/
-		/*Entrada e tratamento de dados*/
+		/* Entrada e tratamento de dados */
 		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros?");
 		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas?");
 				
@@ -37,7 +37,7 @@ public class Cursos {
 		JOptionPane.showMessageDialog(null,"Divisão por pessoa deu " + divisao + "carros e sobrou " + resto + "carro");
 		
 		/*=======================================================*/
-		/*Exemplo de Case*/
+		/* Exemplo de Case */
 		switch (divisao) {
 		case 1: {
 			System.out.println("Apenas 1 carro por pessoa");
@@ -52,7 +52,7 @@ public class Cursos {
 		}
 		
 		/*=======================================================*/
-		/*While Do -> Primeiro verifica e depois executa*/
+		/* While Do -> Primeiro verifica e depois executa */
 		int vez = 0;
 		while (vez <= 10) { 
 			System.out.println("A variável vez está valendo: " + vez);
@@ -60,11 +60,23 @@ public class Cursos {
 		}
 		
 		/*=======================================================*/
-		/*Do While -> Primeiro executa e depois verifica*/
+		/* Do While -> Primeiro executa e depois verifica */
 		do { /*Primeiro executa e depois verifica*/
 			System.out.println("A variável vez está valendo: " + vez);
 			vez += 2;
 		} while (vez <= 10);
+		
+		/*=======================================================*/
+		/* Entrada de Confirmação -> Sim=0, Não=1 e Cancelar=2 */
+		int resposta = JOptionPane.showConfirmDialog(null, "Deseja exibir a divisão?");
+		if (resposta == 0) {
+		   System.out.println("Resultado da divisão é " + divisao);
+		}else if (resposta == 1) {
+			System.out.println("Não quis ver o resultado da divisão");
+		}else {
+			System.out.println("Cancelou a pergunta");
+		}	
 	}
+	
 
 }
