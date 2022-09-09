@@ -143,11 +143,12 @@ public class Aluno {
 	public void setNota4(double nota4) {
 		this.nota4 = nota4;
 	}
-	
+	/*Método que retorn a media do aluno*/
 	public double getMediaNota() {
 	   return (nota1 + nota2 + nota3 + nota4)/4;
 	}
 	
+	/*Método que retorna true para aprovado e false para reprovado*/
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();
 		if (media >= 70 ) {
@@ -156,7 +157,8 @@ public class Aluno {
 			return false;
 		}
 	}		
-		
+	
+	/*Método que retorna o resultado conforme a média*/
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
 		if (media >= 70 ) {

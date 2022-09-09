@@ -1,5 +1,7 @@
 package Pacote3;
 
+import javax.swing.JOptionPane;
+
 public class Escola {
 
 	public static void main(String[] args) {
@@ -7,22 +9,37 @@ public class Escola {
 		/*new Aluno() é uma instancia (Criação de objeto)*/
 		/*aluno1 é uma referência para o objeto aluno*/
 		
+		String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
+		String idade = JOptionPane.showInputDialog("Qual a idade?");
+		String dataNascimento = JOptionPane.showInputDialog("Data de Nacimento?");
+		String registroGeral = JOptionPane.showInputDialog("Registro Geral?");
+		String numeroCpf = JOptionPane.showInputDialog("Qual o CPF?");
+		String nomeMae = JOptionPane.showInputDialog("Qual o nome da mãe?");
+		String nomePai = JOptionPane.showInputDialog("Qual o nome do pai?");
+		String dataMatricula = JOptionPane.showInputDialog("Data da matricula?");
+		String nomeEscola = JOptionPane.showInputDialog("Nome da escola?");
+		String serieMatriculado = JOptionPane.showInputDialog("Qual a série?");
+		String nota1 = JOptionPane.showInputDialog("Nota 1");
+		String nota2 = JOptionPane.showInputDialog("Nota 2");
+		String nota3 = JOptionPane.showInputDialog("Nota 3");
+		String nota4 = JOptionPane.showInputDialog("Nota 4");
+		
 		Aluno aluno1 = new Aluno();
 		
-		aluno1.setNome("João da Silva");
-		aluno1.setIdade(50);
-		aluno1.setDataNascimento("18/10/1987");
-		aluno1.setRegistroGeral("16.642.338-3");
-		aluno1.setNumeroCpf("108.642.338-03");
-		aluno1.setNomeMae("Shirlei");
-		aluno1.setNomePai("Antonio");
-		aluno1.setDataMatricula("10/01/2019");
-		aluno1.setNomeEscola("Java Shcool");
-		aluno1.setSerieMatriculado("5");
-		aluno1.setNota1(90);
-		aluno1.setNota2(80.8);
-		aluno1.setNota3(70.9);
-		aluno1.setNota4(90.7);
+		aluno1.setNome(nome);
+		aluno1.setIdade(Integer.valueOf(idade));
+		aluno1.setDataNascimento(dataNascimento);
+		aluno1.setRegistroGeral(registroGeral);
+		aluno1.setNumeroCpf(numeroCpf);
+		aluno1.setNomeMae(nomeMae);
+		aluno1.setNomePai(nomePai);
+		aluno1.setDataMatricula(dataMatricula);
+		aluno1.setNomeEscola(nomeEscola);
+		aluno1.setSerieMatriculado(serieMatriculado);
+		aluno1.setNota1(Double.parseDouble(nota1));
+		aluno1.setNota2(Double.parseDouble(nota2));
+		aluno1.setNota3(Double.parseDouble(nota3));
+		aluno1.setNota4(Double.parseDouble(nota4));
 
 		System.out.println("Nome é " + aluno1.getNome());
 		System.out.println("Idade é " + aluno1.getIdade());
