@@ -19,6 +19,10 @@ public class Escola {
 		aluno1.setDataMatricula("10/01/2019");
 		aluno1.setNomeEscola("Java Shcool");
 		aluno1.setSerieMatriculado("5");
+		aluno1.setNota1(90);
+		aluno1.setNota2(80.8);
+		aluno1.setNota3(70.9);
+		aluno1.setNota4(90.7);
 
 		System.out.println("Nome é " + aluno1.getNome());
 		System.out.println("Idade é " + aluno1.getIdade());
@@ -29,8 +33,9 @@ public class Escola {
 		System.out.println("Nome do Pai é " + aluno1.getNomePai());
 		System.out.println("Data de Matrícula é " + aluno1.getDataMatricula());
 		System.out.println("Nome da Escola é " + aluno1.getNomeEscola());
-		System.out.println("Série Matriculado é " + aluno1.getSerieMatriculado());	
+		System.out.println("Série Matriculado é " + aluno1.getSerieMatriculado());
 		
+		System.out.println("Média da Nota é " + aluno1.getMediaNota());
 		/*======================================================================*/
 		
 		//Aluno aluno1 = new Aluno(); /*Aqui será o João*/
