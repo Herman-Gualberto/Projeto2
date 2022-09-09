@@ -27,8 +27,8 @@ public class Escola {
 		Aluno aluno1 = new Aluno();
 		
 		aluno1.setNome(nome);
-		aluno1.setIdade(Integer.valueOf(idade));
-		aluno1.setDataNascimento(dataNascimento);
+		aluno1.setIdade(Integer.valueOf(idade));  /*Integer.valueOf() converte string para número inteiro*/
+		aluno1.setDataNascimento(dataNascimento); 
 		aluno1.setRegistroGeral(registroGeral);
 		aluno1.setNumeroCpf(numeroCpf);
 		aluno1.setNomeMae(nomeMae);
@@ -36,8 +36,8 @@ public class Escola {
 		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setNomeEscola(nomeEscola);
 		aluno1.setSerieMatriculado(serieMatriculado);
-		aluno1.setNota1(Double.parseDouble(nota1));
-		aluno1.setNota2(Double.parseDouble(nota2));
+		aluno1.setNota1(Double.parseDouble(nota1)); /*Double.parseDouble() converte string para numérico com decimal*/
+		aluno1.setNota2(Double.parseDouble(nota2));         
 		aluno1.setNota3(Double.parseDouble(nota3));
 		aluno1.setNota4(Double.parseDouble(nota4));
 
@@ -65,6 +65,11 @@ public class Escola {
 		//Aluno aluno3 = new Aluno(); /*Aqui será o Alex*/
 		//Aluno aluno4 = new Aluno("Maria");
 		//Aluno aluno5 = new Aluno("José", 50);
+		
+		System.out.println(aluno1.toString()); /*Descrição do objeto na memória*/
+		System.out.println("Média da Nota é " + aluno1.getMediaNota());
+		System.out.println("Resultado é " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+
 	
 	}
 	
