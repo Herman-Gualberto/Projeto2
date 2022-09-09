@@ -36,6 +36,7 @@ public class Escola {
 		System.out.println("Série Matriculado é " + aluno1.getSerieMatriculado());
 		
 		System.out.println("Média da Nota é " + aluno1.getMediaNota());
+		System.out.println("Média significa que " + aluno1.getAlunoAprovado2());
 		/*======================================================================*/
 		
 		//Aluno aluno1 = new Aluno(); /*Aqui será o João*/
