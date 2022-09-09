@@ -91,5 +91,7 @@ public class Cursos {
 		
 		double media = (dNota1 + dNota2 + dNota3 + dNota4) / 4;
 		JOptionPane.showMessageDialog(null,"A média é : " + media);
+		
 	}
+	
 }
